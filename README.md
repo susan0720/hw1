@@ -8,12 +8,10 @@
 	#include "stdafx.h"
 	#include <iostream>
 	#include <opencv2\opencv.hpp>
-	//#include <cv.h>
-	//using namespace cv;
-	//using namespace std;
 	int main(){
 	cv::Mat image;
-	image = cv::imread("../image/people.jpg");   // Read the file
+	// Read the file
+	image = cv::imread("../image/people.jpg");   
 	uchar *pixptr;
 	if (image.empty()){
 		std::cout << "圖片不見了QQ";
