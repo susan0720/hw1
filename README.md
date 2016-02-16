@@ -9,16 +9,9 @@
 	#include <iostream>
 	#include <opencv2\opencv.hpp>
 	//#include <cv.h>
-
 	//using namespace cv;
-//using namespace std;
-
-//blue  pixptr[0] 
-//green  pixptr[1] 
-//red  pixptr[2]
-
-int main(){
-
+	//using namespace std;
+	int main(){
 	cv::Mat image;
 	image = cv::imread("../image/people.jpg");   // Read the file
 	uchar *pixptr;
@@ -50,7 +43,7 @@ int main(){
 
 	
 	return(0);
-}
+	}
 # Theory
 # Disparity result
 # Reference
