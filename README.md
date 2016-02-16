@@ -3,14 +3,14 @@
 	運用可調整程式，實現Q1暖色系濾鏡
 	運用可調整程式，實現Q3電影感色調
 # Implementation
-// 
+ 
 
-#include "stdafx.h"
-#include <iostream>
-#include <opencv2\opencv.hpp>
-//#include <cv.h>
+	#include "stdafx.h"
+	#include <iostream>
+	#include <opencv2\opencv.hpp>
+	//#include <cv.h>
 
-//using namespace cv;
+	//using namespace cv;
 //using namespace std;
 
 //blue  pixptr[0] 
