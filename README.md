@@ -3,6 +3,9 @@
 	運用可調整程式，實現Q1暖色系濾鏡
 	運用可調整程式，實現Q3電影感色調
 # Implementation
+	首先讓暗影變得比較青，就是把紅光關掉，而如何分辨暗影?我是判斷每個點的RGB三色加起來是否小於某個值來分辨，再讓R的數值除1.4變小，會選擇1.4是因為這樣不會有overflow的情況發生。
+再來加上橙色濾鏡，因為橙色的分析是(R0.5,G0.5,B*0)，但是濾鏡是額外加上的，所有的點都會覆蓋到，因此連藍色的部分也要加。
+最後的結果雖然和網頁類似，但是脖子還有背景中某人的黃衣服，出現了藍色色塊，我覺得網頁上應該是有另外加上模糊的效果，才會看起來不那麼明顯。
  
 
 	#include "stdafx.h"
@@ -43,5 +46,9 @@
 	return(0);
 	}
 # Theory
+	>三原色光模式
 # Disparity result
+	
 # Reference
+1. 橙色濾鏡參考(https://helpx.adobe.com/tw/photoshop/using/color-monochrome-adjustments-using-channels.html)
+2. (http://www.csie.ntnu.edu.tw/~u91029/Image.html)
